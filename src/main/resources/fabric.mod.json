@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "skykid",
+	"version": "${version}",
+	"name": "Origins:Skykid - Tweaks",
+	"description": "Only the Items and Sounds from the Origins:Skykid mod written by AvremW",
+	"authors": [
+		"Topaz_Red"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/skykid/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.topaz.skykid.Skykid"
+		],
+		"client": [
+			"net.topaz.skykid.SkykidClient"
+		],
+		"fabric-datagen": [
+			"net.topaz.skykid.SkykidDataGenerator"
+		]
+	},
+	"mixins": [
+		"skykid.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
